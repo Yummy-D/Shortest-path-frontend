@@ -100,7 +100,7 @@ document.getElementById('path-form').addEventListener('submit', function (event)
     const pathCoordinates = getCoordinatesForPath(start, end);
 
     // ส่งข้อมูลไปยัง Backend
-    fetch('http://localhost:3000/find-path', {
+    fetch('https://shortest-backendfix.onrender.com/find-path', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ start, end })
